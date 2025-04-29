@@ -4,16 +4,18 @@
 }
 
 body{
-    background-color: #94d2bd;
+    background-color: red;
+    background-image: url('./assets/ChatGPT\ Image\ Apr\ 29\,\ 2025\,\ 11_19_36\ PM.png');
+    background-size: cover;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
 
-h1{
+/* h1{
     font-size: 10vmin;
     color: #001219;
     text-shadow: 2px 2px 5px #000000;
-}
+} */
 
 .cointainer{
     display: flex;
@@ -33,12 +35,11 @@ h1{
 }
 
 .btn{
-    background-color: #e9d8a6;
+    background-color: rgba(0, 0, 0, 0.3);
     height: 18vmin;
     width: 18vmin;
     border-radius: 1rem;
     border: none;
-    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
     font-size: 5vmin;
 }
 
@@ -58,12 +59,19 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ee9b00;
+    background-color: rgba(0, 0, 0, 0.1);
     height: 5vmin;
     width: 30vmin;
     border-radius: 1rem;
-    font-weight: 800;
-    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2);
+    font-weight: 1000;
+    font-size: 1.5rem;
+    text-shadow: 
+        0 0 10px #80ffdb,
+        0 0 20px #f72585,
+        0 0 30px #80ffdb,
+        0 0 40px #f72585,
+        0 0 70px #80ffdb,
+        0 0 100px #f72585;
 }
 
 .restart{
@@ -72,12 +80,86 @@ h1{
 
 .info:hover{
     cursor: pointer;
-    background-color: #f9c74f;
-    box-shadow: 5px 5px 5px #000000;
+    animation: neon-info 1.5s ease-in-out infinite alternate;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn:hover{
     cursor: pointer;
-    background-color: #f9c74f;
-    box-shadow: 5px 5px 5px #000000;
+    animation: neon-btn 1.5s ease-in-out infinite alternate;
+    transition: all 0.3s ease-in-out;
+}
+
+.neon-text{
+    color: #80ffdb;
+    font-size: 5rem;
+    text-align: center;
+    animation: neon-animation 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-animation{
+    from{
+        text-shadow: 
+            0 0 5px #80ffdb,
+            0 0 10px #80ffdb,
+            0 0 20px #80ffdb,
+            0 0 40px #80ffdb,
+            0 0 80px #80ffdb,
+            0 0 100px #80ffdb,
+            0 0 200px #80ffdb;
+    }to{
+        text-shadow: 
+            0 0 10px #f72585,
+            0 0 20px #f72585,
+            0 0 30px #f72585,
+            0 0 40px #f72585,
+            0 0 50px #f72585,
+            0 0 60px #f72585,
+            0 0 70px #f72585;
+    }
+}
+
+@keyframes neon-btn{
+    from{
+        box-shadow: 
+            0 0 5px #80ffdb,
+            0 0 10px #80ffdb,
+            0 0 20px #80ffdb,
+            0 0 40px #80ffdb,
+            0 0 80px #80ffdb,
+            0 0 100px #80ffdb,
+            0 0 200px #80ffdb;
+    }to{
+        box-shadow: 
+            0 0 10px #f72585,
+            0 0 20px #f72585,
+            0 0 30px #f72585,
+            0 0 40px #f72585,
+            0 0 50px #f72585,
+            0 0 60px #f72585,
+            0 0 70px #f72585;
+    }
+}
+
+@keyframes neon-info{
+    from{
+        box-shadow: 
+        0 0 10px #4361ee,
+        0 0 20px #4361ee,
+        0 0 30px #4361ee,
+        0 0 40px #4361ee,
+        0 0 50px #4361ee,
+        0 0 60px #4361ee,
+        0 0 70px #4361ee;
+
+    }to{
+        box-shadow: 
+        0 0 5px #560bad,
+        0 0 10px #560bad,
+        0 0 20px #560bad,
+        0 0 40px #560bad,
+        0 0 80px #560bad,
+        0 0 100px #560bad,
+        0 0 200px #560bad;
+    }
 }
