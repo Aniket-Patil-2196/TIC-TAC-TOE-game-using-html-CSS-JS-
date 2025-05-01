@@ -34,7 +34,8 @@ body{
     gap: 2vmin;
 }
 
-.btn{
+.box{
+    color: #80ffdb;
     background-color: rgba(0, 0, 0, 0.3);
     height: 18vmin;
     width: 18vmin;
@@ -84,7 +85,7 @@ body{
     transition: all 0.3s ease-in-out;
 }
 
-.btn:hover{
+.box:hover{
     cursor: pointer;
     animation: neon-btn 1.5s ease-in-out infinite alternate;
     transition: all 0.3s ease-in-out;
