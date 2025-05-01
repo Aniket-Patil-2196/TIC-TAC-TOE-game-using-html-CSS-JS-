@@ -1,22 +1,51 @@
-# TIC-TAC-TOE
+# 🎮 TIC-TAC-TOE (Cyberpunk Edition)
 
-🧩 Technologies Used
-🔹 HTML
-Structured the layout of the game board using semantic elements (<div>, <button>, etc.).
+A two-player **Tic-Tac-Toe** game built using **HTML**, **CSS**, and **JavaScript**, featuring a **cyberpunk anime aesthetic**. Play as futuristic warriors in a neon-lit interface inspired by classic arcade styles.
 
-Created sections for the title, game grid, player turn display, and win/draw messages.
+---
 
-Used id and class attributes to link HTML elements to CSS and JavaScript logic.
+## 🧩 Technologies Used
 
-🔹 CSS (Styling)
-Applied custom styles to give the game a cyberpunk neon look.
+### 🔹 HTML
+- Semantic structure with `<div>`, `<button>`, and `<span>` elements.
+- Game sections: title, game grid, player turn, win/draw message, and restart button.
+- IDs and classes for DOM manipulation via JavaScript.
 
-Used flexbox to center and align the game board and elements.
+### 🔹 CSS (Styling)
+- Cyberpunk-inspired neon glow using `text-shadow` and bright RGB/HSLA colors.
+- Flexbox layout to center and align all elements.
+- Transparent button backgrounds with full-opacity text using `rgba()`.
+- Animated effects like flickering neon and hover transitions.
+- Anime-style background image with characters on left and right, leaving center clear for gameplay.
 
-Added neon text glow effects using text-shadow and vibrant color palettes.
+---
 
-Styled the background with a futuristic anime/cyberpunk image and adjusted layout spacing.
+## ✨ Features
 
-Created hover effects and transitions to enhance interactivity.
+- 👥 Two-player local gameplay.
+- 🌌 Cyberpunk anime theme with glowing UI.
+- 🔄 Restart button to reset the board.
+- ⚔️ Male and female characters shown during gameplay.
+- 🎨 Responsive, modern layout using Flexbox.
+- 🔊 Optional sound effects and visual win indicators (can be added).
 
-Controlled transparency using rgba() to make backgrounds semi-transparent without affecting text.
+---
+
+## 📸 Preview
+
+![Game Screenshot](./1b4c7b6f-9948-455c-8688-68dd3fbdbaa3.png)
+
+---
+
+## 📂 Project Structure
+
+```bash
+.
+├── index.html
+├── style.css
+├── script.js
+├── images/
+│   ├── background.png
+│   ├── boy_character.png
+│   └── girl_character.png
+└── README.md
