@@ -35,7 +35,6 @@ body{
 }
 
 .box{
-    color: #80ffdb;
     background-color: rgba(0, 0, 0, 0.3);
     height: 18vmin;
     width: 18vmin;
@@ -96,6 +95,19 @@ body{
     font-size: 10vmin;
     text-align: center;
     animation: neon-animation 1.5s ease-in-out infinite alternate;
+}
+
+.X{
+    color: #f72585;
+    font-size: 10vmin;
+    text-align: center;
+    animation: x-neon 1.5s ease-in-out infinite alternate;
+}
+.O{
+    color: #80ffdb;
+    font-size: 10vmin;
+    text-align: center;
+    animation: o-neon 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes neon-animation{
@@ -161,5 +173,49 @@ body{
         0 0 80px #560bad,
         0 0 100px #560bad,
         0 0 200px #560bad;
+    }
+}
+
+@keyframes x-neon{
+    from{
+        text-shadow: 
+            0 0 5px #ffffff,
+            0 0 10px #ffffff,
+            0 0 20px #ffffff,
+            0 0 40px #ffffff,
+            0 0 80px #ffffff,
+            0 0 100px #ffffff,
+            0 0 200px #ffffff;
+    }to{
+        text-shadow: 
+            0 0 10px #f72585,
+            0 0 20px #f72585,
+            0 0 30px #f72585,
+            0 0 40px #f72585,
+            0 0 50px #f72585,
+            0 0 60px #f72585,
+            0 0 70px #f72585;
+    }
+}
+
+@keyframes o-neon{
+    from{
+        text-shadow: 
+            0 0 5px #ffffff,
+            0 0 10px #ffffff,
+            0 0 20px #ffffff,
+            0 0 40px #ffffff,
+            0 0 80px #ffffff,
+            0 0 100px #ffffff,
+            0 0 200px #ffffff;
+    }to{
+        text-shadow: 
+            0 0 10px #80ffdb,
+            0 0 20px #80ffdb,
+            0 0 30px #80ffdb,
+            0 0 40px #80ffdb,
+            0 0 50px #80ffdb,
+            0 0 60px #80ffdb,
+            0 0 70px #80ffdb;
     }
 }

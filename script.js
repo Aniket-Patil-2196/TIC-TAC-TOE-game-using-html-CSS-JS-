@@ -10,10 +10,12 @@ boxes.forEach((box) => {
         console.log("clicked");
         if(turnO){
             box.innerText = "O";
+            box.classList.add("O");
             turnO = false;
             turn.innerText = "X's Turn";
         }else{
             box.innerText = "X";
+            box.classList.add("X");
             turnO = true;
             turn.innerText = "O's Turn";
         }
