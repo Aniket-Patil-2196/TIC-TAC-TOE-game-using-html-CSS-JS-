@@ -219,3 +219,31 @@ body{
             0 0 70px #80ffdb;
     }
 }
+
+@media (max-width: 450px) {
+    #heading{
+        margin: 20px 0 20px 0;
+    }
+    .cointainer{
+        height : 45vh;
+        margin : 0px 0 20px 0 
+    }
+    .game{
+        width : 90%;
+        height : 100%;
+    }
+    .box{
+        height : 30%;
+        width : 30%;
+    }
+    .control{
+        width : 90%;
+    }
+    .info{
+        width : 70%;
+        margin: 10px 0 10px 0;
+    }
+    .restart{
+        width : 70%;
+    }   
+}
