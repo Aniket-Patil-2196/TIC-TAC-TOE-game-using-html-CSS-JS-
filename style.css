@@ -93,7 +93,7 @@ body{
 
 .neon-text{
     color: #80ffdb;
-    font-size: 5rem;
+    font-size: 10vmin;
     text-align: center;
     animation: neon-animation 1.5s ease-in-out infinite alternate;
 }
@@ -152,7 +152,6 @@ body{
         0 0 50px #4361ee,
         0 0 60px #4361ee,
         0 0 70px #4361ee;
-
     }to{
         box-shadow: 
         0 0 5px #560bad,

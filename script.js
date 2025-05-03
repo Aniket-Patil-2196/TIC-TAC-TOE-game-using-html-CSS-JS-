@@ -43,13 +43,12 @@ function checkWinner(){
         let box3 = boxes[pattern[2]].innerText;
         
         if(box1 != "" && box2 != "" && box3!= ""){
-            if(box1 == box2 && box2== box3){
+            if(box1 === box2 && box2 === box3){
                 winner.innerText = `${box1} wins`;
                 console.log("winner", box1);
-                for(box of boxes){
-                    box.disabled = true;
-                }
                 return;
+            }else{
+                winner.innerText = "Draw";
             }
         }
     }
