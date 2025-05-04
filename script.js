@@ -5,6 +5,13 @@ let winner = document.querySelector(".win");
 
 let turnO = true; 
 
+const disable = () => {
+    for(box of boxes){
+        box.disabled = true;
+    }
+}
+
+
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
         console.log("clicked");
@@ -48,6 +55,7 @@ function checkWinner(){
             if(box1 === box2 && box2 === box3){
                 winner.innerText = `${box1} wins`;
                 console.log("winner", box1);
+                disable();
                 return;
             }else{
                 winner.innerText = "Draw";
